@@ -264,3 +264,53 @@ window.AU.specGrupos=[
  ["Interiores",["Revestimiento interior","Cielorraso","Piso interior","Baños","Terminaciones"]],
  ["Aberturas e instalaciones",["Aberturas","Puerta exterior","Puertas interiores","Instalación eléctrica","Instalación sanitaria"]]
 ];
+
+/* ===== GARANTÍAS Y CERTIFICACIONES =====
+   d = qué es (sale de la ficha de Aura). p = plazo de la garantía, ej. "10 años". Si p está vacío se muestra "Plazo a confirmar".
+   Certificaciones: sumá {t:"Nombre", d:"Qué certifica y quién la emite"}. Si está vacío se muestra un recuadro "a confirmar". */
+window.AU.garantias=[
+ {t:"Estructura",d:"Estructura de hierro y steel framing, rigidizada con OSB de 11 mm.",p:""},
+ {t:"Envolvente y aislación",d:"Chapa color calibre 26 por fuera y lana de vidrio de 5 cm en paredes y techo.",p:""},
+ {t:"Instalaciones",d:"Instalación eléctrica completa con luces y tomas, e instalación sanitaria de baño y cocina.",p:""},
+ {t:"Aberturas y terminaciones",d:"Aberturas de aluminio negro Serie 25, puertas interiores de madera y revestimiento interior de yeso y WPC.",p:""}
+];
+window.AU.certificaciones=[];
+
+/* ===== VIDEO Y TESTIMONIOS =====
+   video: pegá un link de YouTube o la ruta de un mp4 (ej. "video/fabrica.mp4"). poster: imagen de portada opcional (ej. "img/fabrica.webp").
+   testimonios: {q:"Lo que dijo el cliente", n:"Nombre", l:"Ciudad o zona", m:"N22"} */
+window.AU.video={src:"",poster:"",titulo:"Recorrido por la fábrica"};
+window.AU.testimonios=[];
+
+/* ===== GUÍA DEL TERRENO Y NORMATIVA (Uruguay) ===== */
+window.AU.terreno={
+ deptos:["Artigas","Canelones","Cerro Largo","Colonia","Durazno","Flores","Florida","Lavalleja","Maldonado","Montevideo","Paysandú","Río Negro","Rivera","Rocha","Salto","San José","Soriano","Tacuarembó","Treinta y Tres"],
+ check:[
+  ["Acceso",[
+   ["Un camión puede llegar hasta el terreno","El módulo viaja en camión. Revisá el ancho del camino, las curvas y que no haya cables ni ramas bajas."],
+   ["Hay lugar para maniobrar y descargar","Necesita un espacio despejado cerca del punto donde va a quedar el módulo."]
+  ]],
+  ["Servicios",[
+   ["Agua disponible (red de OSE o pozo)","Si no hay red cerca, se puede resolver con perforación y tanque. Conviene definirlo antes."],
+   ["Electricidad (red de UTE cerca o a gestionar)","Pedí la conexión con tiempo: la demora depende de cuán lejos esté la red."],
+   ["Saneamiento resuelto (red o sistema propio)","Si no hay colectora, se usa un sistema propio. Qué se permite depende de tu Intendencia."]
+  ]],
+  ["Terreno y base",[
+   ["El terreno está nivelado o con poca pendiente","Una pendiente grande se resuelve, pero suma trabajo de obra civil."],
+   ["Sabés en qué parte del padrón va el módulo","Hay retiros mínimos respecto de los límites del terreno. Los define la normativa de cada zona."]
+  ]],
+  ["Papeles",[
+   ["Tenés el padrón y sos titular (o tenés autorización)","Casi todas las Intendencias piden acreditar quién es el titular."],
+   ["Sabés si la zona es urbana, suburbana o rural","Cambia qué se puede construir y qué condiciones se piden."],
+   ["Tenés un técnico para el permiso","Un arquitecto o ingeniero firma los planos y se hace responsable de la obra."]
+  ]]
+ ],
+ norma:[
+  ["¿Necesito un permiso de construcción?","Sí, en general. Lo otorga la Intendencia del departamento donde está el terreno, y cada Intendencia tiene su propia ordenanza de edificación."],
+  ["¿Qué suelen pedir las Intendencias?","Planos firmados por un técnico (arquitecto o ingeniero), documentos del padrón y de quién es el titular (en varias, una minuta o un certificado notarial) y el pago de las tasas. Los requisitos y los costos cambian según el departamento."],
+  ["¿Cambia si el terreno es urbano o rural?","Puede cambiar. En suelo rural la obra también se gestiona ante la Intendencia, y a veces con condiciones adicionales. Consultá cómo está categorizado tu padrón."],
+  ["¿Hay requisitos extra para un módulo?","Algunas Intendencias piden documentación adicional o un trámite distinto para los sistemas constructivos livianos o no tradicionales. Preguntalo en la oficina de edificaciones antes de avanzar."],
+  ["¿Piden algo más, como constancias?","Algunas sí. Por ejemplo, varias piden una constancia de cumplimiento de la ley de energía solar térmica. Tu técnico sabe qué corresponde en tu departamento."],
+  ["¿Dónde encuentro el trámite?","En gub.uy/tramites, buscando “permiso de construcción” y el nombre de tu departamento. Ahí figuran los requisitos y los costos vigentes."]
+ ]
+};
