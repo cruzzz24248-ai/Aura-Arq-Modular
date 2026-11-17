@@ -514,3 +514,15 @@ section.hero{justify-content:flex-start;gap:0;background:#0c0a09;padding:calc(72
  .vg,.trx{grid-template-columns:minmax(0,1fr)}
  .pgb{top:70px}
 }
+
+/* ===== hero en computadora: título, botones, lectura y pastillas centrados ===== */
+@media(min-width:900px){
+.hero .ht{margin-inline:auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero h1{margin-inline:auto}
+.hero .acts{justify-content:center}
+.hro,.hpl{margin-inline:auto;width:100%}
+.hro{justify-content:center}
+.hro a{margin-left:0}
+.hpl{justify-content:center}
+.hpl button{flex:0 1 auto;min-width:5.6rem}
+}
